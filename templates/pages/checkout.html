@@ -1,5 +1,12 @@
 {{#partial "head"}}
 
+<style>
+    /* Hide the order comments field on checkout - it's being used to automatically store cart/customer info */
+    fieldset.form-fieldset[data-test="checkout-shipping-comments"] {
+        display: none !important;
+    }
+</style>
+
 {{{ checkout.checkout_head }}}
 {{{ stylesheet '/assets/css/optimized-checkout.css' }}}
 {{ getFontsCollection }}
