@@ -9,6 +9,14 @@
 
 {{{head.scripts}}}
 
+<style>
+    .custom-order-confirmation {
+        padding: 0 2rem;
+        margin: 2rem auto;
+        text-align: center;
+    }
+</style>
+
 {{/partial}}
 
 {{#partial "page"}}
@@ -26,6 +34,8 @@
         </h2>
     </div>
 </header>
+
+<div class="custom-order-confirmation">Your order refernce: #<span id="order-confirmation-prefix">TTXXXXXXXX</span></div>
 
 {{{ checkout.order_confirmation_content }}}
 
